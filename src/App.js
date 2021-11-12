@@ -18,7 +18,24 @@ class App extends React.Component {
         <h2>Name: {this.state.name}</h2>
         <h2>Age: {this.state.age}</h2>
         <h2>Designation: {this.state.des}</h2>
-        <Userform pros={this.state} changelistener={this.changelistener} />
+        <Userform
+          pstate={this.state}
+          changelistener={this.changelistener}
+          label="Name"
+          inputname="name"
+        />
+        <Userform
+          pstate={this.state}
+          changelistener={this.changelistener}
+          label="Age"
+          inputname="age"
+        />
+        <Userform
+          pstate={this.state}
+          changelistener={this.changelistener}
+          label="Designation"
+          inputname="des"
+        />
       </div>
     );
   }
